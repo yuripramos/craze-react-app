@@ -1,2 +1,7 @@
+# Dependency directories
+node_modules
+jspm_packages
+
+#Photoshop Files
+psd/
 *.zip
-psd
