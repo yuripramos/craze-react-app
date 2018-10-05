@@ -1,6 +1,12 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
   "rules": {
     "react/jsx-no-bind": 0,
     "arrow-body-style": 0,
@@ -8,15 +14,12 @@
     "no-underscore-dangle": 0,
     "import/no-extraneous-dependencies": 0,
     "linebreak-style": 0,
-    "quotes":0,
+    "quotes": 0,
     "react/require-extension": "off",
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "max-len": [
@@ -26,11 +29,11 @@
       {
         "ignoreUrls": true
       }
-    ],
+    ]
   },
   "env": {
     "jasmine": true,
-    "browser": true,
+    "browser": true
   },
   "settings": {
     "import/resolver": {
