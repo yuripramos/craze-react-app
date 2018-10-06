@@ -1,5 +1,5 @@
 {
-  "name": "Craze App",
+  "name": "CrazeApp",
   "version": "1.0.0",
   "description": "Responsive Craze App",
   "main": "/src/App.js",
@@ -10,7 +10,7 @@
     "start": "npm run dev",
     "lint": "eslint ./src --fix",
     "check": "npm run lint && npm run test",
-    "dev": "webpack-dev-server --port 3000 --inline --hot",
+    "dev": "webpack-dev-server --port 3002 --inline --hot",
     "build:prod": "npm run check && webpack"
   },
   "author": "Yuri Ramos <Yuri Ramos@gmail.com>",
