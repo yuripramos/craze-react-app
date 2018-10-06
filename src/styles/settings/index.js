@@ -9,3 +9,4 @@ export const lighestgrey = "#d3dde4";
 export const lightgrey = "#e5ebf2";
 export const grey = "#ccc";
 export const grey10 = "#536373";
+export const white = "#FFFFFF";

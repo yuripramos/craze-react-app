@@ -1,23 +1,11 @@
-import React, { Component } from "react";
+import React, { Fragment, Component } from "react";
 import ReactDOM from "react-dom";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import "./App.css";
 import { rem } from "../styles/tools";
 import Footer from "../components/footer/Footer";
-import ComponentA from "../components/component_a/componentA";
-import ComponentB from "../components/component_b/componentB";
 import Header from "../components/header/Header";
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: black;
-`;
-
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
+import Content from "../components/Content";
 
 class App extends Component {
   constructor(props) {
@@ -35,9 +23,11 @@ class App extends Component {
           breakpoints: [rem(767), rem(992), rem(1199)]
         }}
       >
-        <Wrapper>
-          <Title>Hello World, this is my first styled component!</Title>
-        </Wrapper>
+        <Fragment>
+          <Header />
+          <Content />
+          <Footer />
+        </Fragment>
       </ThemeProvider>
     );
   }
