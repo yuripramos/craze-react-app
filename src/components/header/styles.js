@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { rem, media } from "../../styles/tools";
-import { white } from "../../styles/settings";
+import { white, trueBlack } from "../../styles/settings";
 
 import bg from "../../assets/images/header_bg.png";
 
@@ -17,7 +17,58 @@ export const HeaderWrapper = styled.header`
 
 export const Title = styled.h1`
   font-family: "Pacifico";
-  font-size: 1.5em;
-  text-align: center;
-  color: black;
+  font-size: ${rem(72)};
+  text-align: left;
+  color: ${white};
+  text-shadow: ${rem(3)} ${rem(3)} rgba(0, 0, 0, 0.25);
+`;
+
+export const SubTitle = styled.h2`
+  font-family: "Helveticaneue";
+  font-size: ${rem(24)};
+  text-align: left;
+  color: ${white};
+  width: ${rem(460)};
+  text-shadow: ${rem(3)} ${rem(3)} rgba(0, 0, 0, 0.25);
+`;
+
+export const IconWrapper = styled.div`
+  width: ${rem(70)};
+  height: ${rem(55)};
+  background: ${trueBlack};
+  border-radius: ${rem(40)};
+  opacity: 0.5;
+  margin: ${rem(5)};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  :hover {
+    opacity: 1;
+  }
+`;
+
+export const ListIcons = styled.div`
+  display: inline-flex;
+  width: ${rem(200)};
+  margin-top: ${rem(15)};
+`;
+
+export const FeaturedImage = styled.div`
+  ${media.md(css`
+    transform: translateY(48px);
+  `)};
+  ${media.lg(css`
+    transform: translateY(92px);
+  `)};
+`;
+
+export const ImgHeader = styled.img`
+  width: ${rem(320)};
+  height: ${rem(350)};
+  ${media.md(css``)};
+  ${media.lg(css`
+    width: ${rem(488)};
+    height: ${rem(500)};
+  `)};
 `;
