@@ -52,14 +52,10 @@ const FaviconPlugin = new FaviconsWebpackPlugin({
 
 const config = {
   entry: './src/app/App.js',
-  node: {
-    __dirname: true
-  },
   output: {
     path: path.resolve(__dirname, 'static'),
     filename: 'bundle.js',
   },
-  target: 'node',
   module: {
     rules: [
       {

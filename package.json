@@ -13,12 +13,13 @@
     "dev": "webpack-dev-server --port 3002 --inline --hot",
     "build:prod": "npm run check && webpack"
   },
-  "author": "Yuri Ramos <Yuri Ramos@gmail.com>",
+  "author": "Yuri Ramos <yuri.pramos@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
+    "grid-styled": "^5.0.2",
     "latest-version": "^3.1.0",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",

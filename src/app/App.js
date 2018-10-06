@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import "./App.css";
-import Footer from "../components/footer/Footer.js";
-import ComponentA from "../components/component_a/componentA.js";
-import ComponentB from "../components/component_b/componentB.js";
-import Header from "../components/header/Header.js";
+import { rem } from "../styles/tools";
+import Footer from "../components/footer/Footer";
+import ComponentA from "../components/component_a/componentA";
+import ComponentB from "../components/component_b/componentB";
+import Header from "../components/header/Header";
 
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
-  color: palevioletred;
+  color: black;
 `;
 
 const Wrapper = styled.section`
@@ -28,25 +29,16 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <ThemeProvider
+        theme={{
+          space: [0, rem(5), rem(10), rem(15), rem(20)],
+          breakpoints: [rem(767), rem(992), rem(1199)]
+        }}
+      >
         <Wrapper>
           <Title>Hello World, this is my first styled component!</Title>
         </Wrapper>
-        <div className={`container`}>
-          <div className="row">
-            <Header />
-          </div>
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <ComponentA name={this.state.name} />
-            </div>
-            <div className="col-md-12 text-center">
-              <ComponentB lastname={this.state.lastname} />
-            </div>
-          </div>
-        </div>
-        <Footer />
-      </div>
+      </ThemeProvider>
     );
   }
 }
