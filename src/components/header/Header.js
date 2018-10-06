@@ -5,7 +5,7 @@ function Header() {
   return (
     <HeaderWrapper>
       <Container>
-        <Title>Hello World, this is my first styled component!</Title>
+        <Title>Craze</Title>
       </Container>
     </HeaderWrapper>
   );

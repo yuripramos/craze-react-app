@@ -1,7 +1,10 @@
 import React, { Fragment, Component } from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
+
 import "./App.css";
+import "../styles/settings/fonts";
+
 import { rem } from "../styles/tools";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";

@@ -5,8 +5,8 @@ import { ContentWrapper } from "./styles";
 function Content() {
   return (
     <ContentWrapper>
-      content content ContentWrapper
-      <p> sadasd</p>
+      content content CosadasdasdassdntentWrapper
+      <p>Im addicted to you</p>
     </ContentWrapper>
   );
 }
