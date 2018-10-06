@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-
-import style from './style.scss';
+import React, { Component } from "react";
 
 function increaseScore(state) {
   return { score: state.score + 1 };
@@ -19,7 +17,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className={`${style.container} row`} >
+      <div>
         <div className="col-12">
           <h1> React JW2 boilerplate </h1>
         </div>
