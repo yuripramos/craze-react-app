@@ -13,7 +13,8 @@ export const icons = {
   Landscape: require("./Landscape").default,
   Palette: require("./Palette").default,
   User: require("./User").default,
-  Gear: require("./Gear").default
+  Gear: require("./Gear").default,
+  Bullet: require("./Bullet").default
 };
 
 function Icon({ type, color, width, height, ...props }) {

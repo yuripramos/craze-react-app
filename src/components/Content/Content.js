@@ -9,9 +9,15 @@ import {
   Description,
   IcoAligner,
   RightBorder,
-  BoxWrapper
+  BoxWrapper,
+  ContainerWithRightBorder
 } from "./styles";
+
+import video from "../../assets/video/Big_Buck_Bunny.mp4";
+import videoFallback from "../../assets/video/Big_Buck_Bunny.ogv";
+import { Container, Row, Column } from "../../styles/grid";
 import Icon from "../common/Icon";
+import AboutSection from "../AboutSection";
 import { lightBLue } from "../../styles/settings";
 
 const featuresArray = [
@@ -55,24 +61,51 @@ const featuresArray = [
 function Content() {
   return (
     <ContentWrapper>
-      <Title> Craze Features </Title>
-      <SubTitle>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-        eleifend convallis. In rhoncus at magna eu faucibus. Nam condimentum
-        nisi nibh. convallis. In rhoncus at magna eu faucibus. Nam condimentum
-        nisi nibh.
-      </SubTitle>
-      <FeaturesWrapper>
-        {featuresArray.map(c => (
-          <Box>
-            <IcoAligner>
-              <Icon type={c.icon} height={60} width={60} color={lightBLue} />
-            </IcoAligner>
-            <BoxTitle>{c.title}</BoxTitle>
-            <Description>{c.description}</Description>
-          </Box>
-        ))}
-      </FeaturesWrapper>
+      <Container>
+        <Row>
+          <Column>
+            <Title> Craze Features </Title>
+            <SubTitle>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              euismod eleifend convallis. In rhoncus at magna eu faucibus. Nam
+              condimentum nisi nibh. convallis. In rhoncus at magna eu faucibus.
+              Nam condimentum nisi nibh.
+            </SubTitle>
+            <FeaturesWrapper>
+              {featuresArray.map((c, i) => (
+                <ContainerWithRightBorder>
+                  <Box key={i}>
+                    <IcoAligner>
+                      <Icon
+                        type={c.icon}
+                        height={60}
+                        width={60}
+                        color={lightBLue}
+                      />
+                    </IcoAligner>
+                    <BoxTitle>{c.title}</BoxTitle>
+                    <Description>{c.description}</Description>
+                  </Box>
+                  <RightBorder order={i} />
+                </ContainerWithRightBorder>
+              ))}
+            </FeaturesWrapper>
+          </Column>
+        </Row>
+      </Container>
+      <AboutSection
+        bullets={["lorem ipsum lorem remmm", "lorem child child parent"]}
+        video={video}
+        videoFallback={videoFallback}
+        title="Whats Craze all About"
+        text="Duis non gravida felis. Orci varius natoque penatibus et magnis dis
+         parturient montes, nascetur ridiculus mus. Donec ut venenatis eros.
+         Fusce accumsan varius placerat. Vestibulum sed placerat ante, et varius nulla.
+          Sed sit amet felis justo. Pellentesque vehicula sapien orci
+
+          Vestibulum sed placerat ante, et varius nulla.
+          Sed sit amet felis justo. ridiculus mus. Donec ut venenatis eros."
+      />
     </ContentWrapper>
   );
 }

@@ -135,7 +135,7 @@ const config = {
         }),
       },
       {
-        test: /.(mp4|png|jpg|woff(2)??|eot|otf|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        test: /.(mp4|ogv|png|jpg|woff(2)??|eot|otf|ttf|svg)(\?[a-z0-9=.]+)?$/,
         loader: 'url-loader?limit=100000',
       },
     ],

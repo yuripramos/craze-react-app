@@ -18,7 +18,8 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
   margin-top: ${rem(30)};
-  font-family: "Helveticaneue";
+  font-family: "Helveticaneue Thin";
+  font-weight: normal;
   font-size: ${rem(16)};
   color: ${grey10};
   padding: ${rem(0)} ${rem(80)};
@@ -29,14 +30,21 @@ export const FeaturesWrapper = styled.div`
 `;
 
 export const Box = styled.div`
-  margin: ${rem(5)} ${rem(50)} ${rem(4)} ${rem(50)};
+  margin: ${rem(5)} ${rem(20)} ${rem(4)} ${rem(20)};
   padding-bottom: ${rem(50)};
   display: inline-grid;
   flex-direction: row;
   align-items: center;
   border-bottom: solid 1px ${grey20};
-  width: 21%;
+
   height: ${rem(240)};
+`;
+
+export const ContainerWithRightBorder = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
 `;
 
 export const BoxWrapper = styled.div`
@@ -47,6 +55,11 @@ export const RightBorder = styled.div`
   width: ${rem(2)};
   align-items: center;
   border-right: solid 1px ${grey20};
+  ${({ order }) =>
+    (order === 2 || order === 5) &&
+    css`
+      border: 0;
+    `};
 `;
 export const IcoAligner = styled.div`
   justify-content: center;
@@ -59,7 +72,7 @@ export const BoxTitle = styled.span`
 `;
 
 export const Description = styled.span`
-  font-family: "Helveticaneue";
+  font-family: "Helveticaneue Thin";
   font-size: ${rem(16)};
   color: ${grey10};
 `;

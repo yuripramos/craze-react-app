@@ -6,10 +6,15 @@ const fonts = {
     require("../../assets/fonts/Pacifico/Pacifico.woff2"),
     require("../../assets/fonts/Pacifico/Pacifico.woff")
   ],
-  Helveticaneue: [
+  "Helveticaneue Thin": [
     require("../../assets/fonts/Helveticaneue/helveticaneue.woff2"),
     require("../../assets/fonts/Helveticaneue/helveticaneue.woff")
   ],
+  "Helveticaneue Medium": [
+    require("../../assets/fonts/Helveticaneue/HelveticaNeue-medium.woff2"),
+    require("../../assets/fonts/Helveticaneue/HelveticaNeue-medium.woff")
+  ],
+
   "MyriadPro Bold": [
     require("../../assets/fonts/Myriadpro/myriadpro-bold.woff2"),
     require("../../assets/fonts/Myriadpro/myriadpro-bold.woff")

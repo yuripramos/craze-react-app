@@ -24,7 +24,7 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
-  font-family: "Helveticaneue";
+  font-family: "Helveticaneue Medium";
   font-size: ${rem(24)};
   text-align: left;
   color: ${white};
