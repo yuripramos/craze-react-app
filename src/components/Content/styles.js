@@ -47,9 +47,6 @@ export const ContainerWithRightBorder = styled.div`
   width: 30%;
 `;
 
-export const BoxWrapper = styled.div`
-  background: red;
-`;
 export const RightBorder = styled.div`
   height: ${rem(210)};
   width: ${rem(2)};

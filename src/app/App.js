@@ -7,7 +7,7 @@ import "../styles/settings/fonts";
 
 import { rem } from "../styles/tools";
 import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
+import Header from "../components/Header";
 import Content from "../components/Content";
 
 class App extends Component {

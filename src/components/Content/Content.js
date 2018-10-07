@@ -9,7 +9,6 @@ import {
   Description,
   IcoAligner,
   RightBorder,
-  BoxWrapper,
   ContainerWithRightBorder
 } from "./styles";
 
@@ -18,6 +17,7 @@ import videoFallback from "../../assets/video/Big_Buck_Bunny.ogv";
 import { Container, Row, Column } from "../../styles/grid";
 import Icon from "../common/Icon";
 import AboutSection from "../AboutSection";
+import PricingPlans from "../PricingPlans";
 import { lightBLue } from "../../styles/settings";
 
 const featuresArray = [
@@ -56,6 +56,40 @@ const featuresArray = [
     icon: "Gear",
     description:
       "Donec non libero vel turpis aliquet interdum. Praesent condimentum ac ligula vel blandit."
+  }
+];
+
+const PricingPlansArray = [
+  {
+    title: "Basic",
+    price: "$19.99",
+    bestOffer: false,
+    features: ["feature1", "feature2", "feature3", "feature4", "feature5"]
+  },
+  {
+    title: "Standard",
+    price: "$39.99",
+    bestOffer: false,
+    features: ["feature1", "feature2", "feature3", "feature4", "feature5"]
+  },
+  {
+    title: "Deluxe",
+    price: "$59.99",
+    bestOffer: true,
+    features: [
+      "feature1",
+      "feature2",
+      "feature3",
+      "feature4",
+      "feature5",
+      "feature6"
+    ]
+  },
+  {
+    title: "Unlimited",
+    price: "$79.99",
+    bestOffer: false,
+    features: ["feature1", "feature2", "feature3", "feature4", "feature5"]
   }
 ];
 function Content() {
@@ -105,6 +139,14 @@ function Content() {
 
           Vestibulum sed placerat ante, et varius nulla.
           Sed sit amet felis justo. ridiculus mus. Donec ut venenatis eros."
+      />
+      {/* <Carousel /> */}
+      <PricingPlans
+        plans={PricingPlansArray}
+        title="Pricing Plans"
+        description="Fusce accumsan varius placerat.
+      Vestibulum sed placerat ante, et varicerat ante, et varicerat ante, et varius null
+          Sed sit amet cerat ante, et varifelis justo. Pellentesque vehicula sapien orci"
       />
     </ContentWrapper>
   );
