@@ -18,6 +18,7 @@ import { Container, Row, Column } from "../../styles/grid";
 import Icon from "../common/Icon";
 import AboutSection from "../AboutSection";
 import PricingPlans from "../PricingPlans";
+import SocialNetworks from "../SocialNetworks";
 import { lightBLue } from "../../styles/settings";
 
 const featuresArray = [
@@ -147,6 +148,12 @@ function Content() {
         description="Fusce accumsan varius placerat.
       Vestibulum sed placerat ante, et varicerat ante, et varicerat ante, et varius null
           Sed sit amet cerat ante, et varifelis justo. Pellentesque vehicula sapien orci"
+      />
+      <SocialNetworks
+        title="Say Hi &amp; Get in Touch"
+        description="San varius placerat. Vestibulum sed placerat ante, et varicerat
+        ante, et varicerat ante, et varius null Sed sit amet cerat ante, et varifelis
+         justo. Pellentesque vehicula sapien or"
       />
     </ContentWrapper>
   );

@@ -1,11 +1,32 @@
 import React from "react";
+import { Links, ListLinks, ContentWrapper } from "./styles";
+import { Container, Row, Column } from "../../styles/grid";
 
-const Footer = () => {
+const Menu = [
+  "Contact",
+  "Download",
+  "Press",
+  "Email",
+  "Support",
+  "Privacy Policy"
+];
+
+function Footer() {
   return (
-    <footer>
-      <p>Place sticky footer content here.</p>
-    </footer>
+    <ContentWrapper>
+      <Container>
+        <Row>
+          <Column>
+            <ListLinks>
+              {Menu.map(c => (
+                <Links>{c}</Links>
+              ))}
+            </ListLinks>
+          </Column>
+        </Row>
+      </Container>
+    </ContentWrapper>
   );
-};
+}
 
 export default Footer;

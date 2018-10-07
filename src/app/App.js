@@ -6,17 +6,14 @@ import "./App.css";
 import "../styles/settings/fonts";
 
 import { rem } from "../styles/tools";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Content from "../components/Content";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      name: "State 1",
-      lastname: "State 2"
-    };
+    this.state = {};
   }
   render() {
     return (

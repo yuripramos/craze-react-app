@@ -14,7 +14,13 @@ export const icons = {
   Palette: require("./Palette").default,
   User: require("./User").default,
   Gear: require("./Gear").default,
-  Bullet: require("./Bullet").default
+  Bullet: require("./Bullet").default,
+  Twitter: require("./Twitter").default,
+  Facebook: require("./Facebook").default,
+  Pinterest: require("./Pinterest").default,
+  GooglePlus: require("./GooglePlus").default,
+  LinkedIn: require("./LinkedIn").default,
+  Youtube: require("./Youtube").default
 };
 
 function Icon({ type, color, width, height, ...props }) {

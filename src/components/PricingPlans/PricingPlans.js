@@ -36,8 +36,8 @@ function PricingPlans({ description, title, plans }) {
                         {getDollars(c.price)}
                         <Cents> {getCents(c.price)} </Cents>
                       </Price>
-                      {c.features.map(k => (
-                        <Feature>{k}</Feature>
+                      {c.features.map((k, i) => (
+                        <Feature key={i}>{k}</Feature>
                       ))}
                     </MiddleWrapper>
                     <Footer>
