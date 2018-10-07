@@ -7,7 +7,13 @@ import { Span } from "./styles";
 export const icons = {
   AppleLogo: require("./AppleLogo").default,
   AndroidLogo: require("./AndroidLogo").default,
-  MicrosoftLogo: require("./MicrosoftLogo").default
+  MicrosoftLogo: require("./MicrosoftLogo").default,
+  Target: require("./Target").default,
+  Monitor: require("./Monitor").default,
+  Landscape: require("./Landscape").default,
+  Palette: require("./Palette").default,
+  User: require("./User").default,
+  Gear: require("./Gear").default
 };
 
 function Icon({ type, color, width, height, ...props }) {
