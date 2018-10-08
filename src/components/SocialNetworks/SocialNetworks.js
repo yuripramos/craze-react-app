@@ -29,8 +29,8 @@ function SocialNetworks({ title, description }) {
             <Title>{title}</Title>
             <SubTitle>{description}</SubTitle>
             <ListIcons>
-              {Icons.map(c => (
-                <IconWrapper>
+              {Icons.map((c, i) => (
+                <IconWrapper key={i}>
                   <Icon type={c} height={25} width={25} color={white} />
                 </IconWrapper>
               ))}

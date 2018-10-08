@@ -41,7 +41,7 @@ export const Box = styled.div`
     ${({ order }) =>
       order > 2 &&
       css`
-        border: 0;
+        border: none !important;
       `};
     height: ${rem(200)};
   `)};
@@ -64,14 +64,14 @@ export const RightBorder = styled.div`
   width: ${rem(2)};
   align-items: center;
 
-  ${({ order }) =>
-    (order === 2 || order === 5) &&
-    css`
-      border: 0;
-    `};
   ${media.sm(css`
     border-right: solid 1px ${grey20};
   `)};
+  ${({ order }) =>
+    (order === 2 || order === 5) &&
+    css`
+      border: none !important;
+    `};
 `;
 export const IcoAligner = styled.div`
   justify-content: center;

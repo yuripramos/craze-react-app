@@ -109,8 +109,8 @@ function Content() {
             </SubTitle>
             <FeaturesWrapper>
               {featuresArray.map((c, i) => (
-                <ContainerWithRightBorder>
-                  <Box order={i} key={i}>
+                <ContainerWithRightBorder key={i}>
+                  <Box order={i}>
                     <IcoAligner>
                       <Icon
                         type={c.icon}
@@ -142,7 +142,7 @@ function Content() {
           Vestibulum sed placerat ante, et varius nulla.
           Sed sit amet felis justo. ridiculus mus. Donec ut venenatis eros."
       />
-      <Carousel title="blala" />
+      <Carousel />
       <PricingPlans
         plans={PricingPlansArray}
         title="Pricing Plans"

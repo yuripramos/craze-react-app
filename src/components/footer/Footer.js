@@ -18,8 +18,8 @@ function Footer() {
         <Row>
           <Column>
             <ListLinks>
-              {Menu.map(c => (
-                <Links>{c}</Links>
+              {Menu.map((c, i) => (
+                <Links key={i}>{c}</Links>
               ))}
             </ListLinks>
           </Column>

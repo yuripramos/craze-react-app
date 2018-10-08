@@ -1,5 +1,5 @@
 import React from "react";
-import { string } from "prop-types";
+import { string, array } from "prop-types";
 import {
   ContentWrapper,
   Description,
@@ -76,7 +76,7 @@ AboutSection.propTypes = {
   video: string,
   videoFallback: string,
   text: string,
-  bullets: string,
+  bullets: array,
   title: string
 };
 

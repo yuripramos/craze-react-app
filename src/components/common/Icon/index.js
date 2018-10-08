@@ -1,5 +1,5 @@
 import React from "react";
-import { string } from "prop-types";
+import { string, number } from "prop-types";
 /*eslint-disable*/
 
 import { Span } from "./styles";
@@ -44,8 +44,8 @@ Icon.defaultProps = {
 
 Icon.propTypes = {
   color: string,
-  height: string,
-  width: string,
+  height: number,
+  width: number,
   type: string.isRequired // eslint-disable-line react/no-typos
 };
 
