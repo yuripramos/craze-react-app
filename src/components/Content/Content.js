@@ -11,15 +11,16 @@ import {
   RightBorder,
   ContainerWithRightBorder
 } from "./styles";
-
 import video from "../../assets/video/Big_Buck_Bunny.mp4";
 import videoFallback from "../../assets/video/Big_Buck_Bunny.ogv";
 import { Container, Row, Column } from "../../styles/grid";
+import { lightBLue } from "../../styles/settings";
 import Icon from "../common/Icon";
+
+import Carousel from "../Carousel";
 import AboutSection from "../AboutSection";
 import PricingPlans from "../PricingPlans";
 import SocialNetworks from "../SocialNetworks";
-import { lightBLue } from "../../styles/settings";
 
 const featuresArray = [
   {
@@ -141,7 +142,7 @@ function Content() {
           Vestibulum sed placerat ante, et varius nulla.
           Sed sit amet felis justo. ridiculus mus. Donec ut venenatis eros."
       />
-      {/* <Carousel /> */}
+      <Carousel title="blala" />
       <PricingPlans
         plans={PricingPlansArray}
         title="Pricing Plans"

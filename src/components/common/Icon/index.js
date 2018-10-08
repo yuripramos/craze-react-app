@@ -6,6 +6,7 @@ import { Span } from "./styles";
 
 export const icons = {
   AppleLogo: require("./AppleLogo").default,
+  Arrow: require("./Arrow").default,
   AndroidLogo: require("./AndroidLogo").default,
   MicrosoftLogo: require("./MicrosoftLogo").default,
   Target: require("./Target").default,
