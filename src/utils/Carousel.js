@@ -3,6 +3,7 @@ export function CarouselAuto() {
     arrows = document.getElementsByClassName("lnr"),
     carouselCount = 0,
     interval = 4000,
+    /*eslint-disable*/
     scrollInterval,
     cancelAutoSlide = false;
 

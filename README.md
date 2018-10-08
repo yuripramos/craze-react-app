@@ -44,10 +44,6 @@ Have an idea? Found a bug? PR? contact-me @ yuri.pramos@gmail.com
 
 **Release 0.3** - Improvements in the responsiveness and UI
 
-## :v: Tests
-
-Only Snapshots Tests
-
 ## :exclamation: Credits
 
 Yuri Ramos

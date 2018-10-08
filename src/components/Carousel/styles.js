@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
-import { findAll } from "styled-components/test-utils";
-import { rem, media } from "../../styles/tools";
+import { rem } from "../../styles/tools";
 import { black40, white, grey10, lightBLue } from "../../styles/settings";
 
 export const ContentWrapper = styled.div`

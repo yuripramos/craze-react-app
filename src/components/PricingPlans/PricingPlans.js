@@ -1,5 +1,5 @@
 import React from "react";
-import { string } from "prop-types";
+import { string, array } from "prop-types";
 import { getDollars, getCents } from "../../utils/formatNumbers";
 import {
   ContentWrapper,
@@ -53,8 +53,10 @@ function PricingPlans({ description, title, plans }) {
     </ContentWrapper>
   );
 }
-// PricingPlans.propTypes = {
-
-// };
+PricingPlans.propTypes = {
+  description: string,
+  title: string,
+  plans: array
+};
 
 export default PricingPlans;

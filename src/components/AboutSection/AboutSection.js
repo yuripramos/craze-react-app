@@ -13,7 +13,6 @@ import Icon from "../common/Icon";
 import { Container, Row, Column } from "../../styles/grid";
 import { trueBlack } from "../../styles/settings";
 import Hide from "../common/Hide";
-import { isResponsive } from "../../utils/getResolution";
 import { SCREEN_XS, RESPONSIVE_VIDEO_HEIGHT } from "../../utils/constants";
 
 function AboutSection({ video, videoFallback, text, title, bullets }) {

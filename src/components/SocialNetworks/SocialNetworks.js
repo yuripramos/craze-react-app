@@ -9,7 +9,7 @@ import {
 } from "./styles";
 import Icon from "../common/Icon";
 import { Container, Row, Column } from "../../styles/grid";
-import { trueBlack, white } from "../../styles/settings";
+import { white } from "../../styles/settings";
 
 const Icons = [
   "Twitter",
