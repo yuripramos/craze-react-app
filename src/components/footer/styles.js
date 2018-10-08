@@ -11,11 +11,21 @@ export const ContentWrapper = styled.div`
 export const ListLinks = styled.div`
   color: ${grey10};
   font-family: "Helveticaneue Thin";
+  font-size: ${rem(10)};
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-top: ${rem(15)};
   width: 100%;
+  ${media.sm(css`
+    font-size: ${rem(12)};
+  `)};
+  ${media.md(css`
+    font-size: ${rem(14)};
+  `)};
+  ${media.lg(css`
+    font-size: ${rem(16)};
+  `)};
 `;
 
 export const Links = styled.a`

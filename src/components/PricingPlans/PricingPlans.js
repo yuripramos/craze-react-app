@@ -30,7 +30,7 @@ function PricingPlans({ description, title, plans }) {
               {plans.map((c, i) => (
                 <PricingPlansWrapper key={i}>
                   <Box biggerBox={c.bestOffer}>
-                    <BoxTitle>{c.title}</BoxTitle>
+                    <BoxTitle biggerBox={c.bestOffer}>{c.title}</BoxTitle>
                     <MiddleWrapper>
                       <Price>
                         {getDollars(c.price)}
@@ -40,8 +40,8 @@ function PricingPlans({ description, title, plans }) {
                         <Feature key={i}>{k}</Feature>
                       ))}
                     </MiddleWrapper>
-                    <Footer>
-                      <Button>purchase</Button>
+                    <Footer biggerBox={c.bestOffer}>
+                      <Button biggerBox={c.bestOffer}>purchase</Button>
                     </Footer>
                   </Box>
                 </PricingPlansWrapper>

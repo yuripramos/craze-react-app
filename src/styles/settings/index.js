@@ -14,3 +14,5 @@ export const white = "#FFFFFF";
 export const white10 = "#fefefe";
 export const blue = "#0d74b9";
 export const lightBLue = "#3498db";
+export const Green10 = "#91e035";
+export const Green20 = "#127b12";

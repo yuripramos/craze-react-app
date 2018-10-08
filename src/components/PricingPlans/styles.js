@@ -8,7 +8,9 @@ import {
   white,
   blue,
   grey20,
-  lightgrey
+  lightgrey,
+  Green10,
+  Green20
 } from "../../styles/settings";
 
 export const ContentWrapper = styled.div`
@@ -16,8 +18,10 @@ export const ContentWrapper = styled.div`
   margin-left: ${rem(-20)};
   margin-right: ${rem(-20)};
   background: ${lightgrey};
-  height: ${rem(580)};
   padding: ${rem(20)} ${rem(10)};
+  ${media.lg(css`
+    height: ${rem(580)};
+  `)};
 `;
 export const Title = styled.h2`
   font-family: "MyriadPro SemiBold";
@@ -44,13 +48,18 @@ export const Box = styled.div`
   text-align: center;
   display: inline-grid;
   flex-direction: row;
-  margin: ${rem(0)} ${rem(2)};
+  margin: ${rem(20)};
+  ${media.lg(css`
+    margin: ${rem(0)} ${rem(2)};
+  `)};
   background: ${white};
   ${({ biggerBox }) =>
     biggerBox &&
     css`
-      transform: translateY(-20px);
-      height: ${rem(460)};
+      ${media.lg(css`
+        transform: translateY(-20px);
+        height: ${rem(460)};
+      `)};
     `};
 `;
 
@@ -68,6 +77,14 @@ export const BoxTitle = styled.span`
   font-size: ${rem(28)};
   background: ${lightBLue};
   color: ${white10};
+  ${({ biggerBox }) =>
+    biggerBox &&
+    css`
+      background: ${Green10};
+      ${media.lg(css`
+        background: ${lightBLue};
+      `)};
+    `};
 `;
 
 export const Price = styled.span`
@@ -86,6 +103,14 @@ export const Feature = styled.span`
 
 export const Footer = styled.div`
   background: ${lightBLue};
+  ${({ biggerBox }) =>
+    biggerBox &&
+    css`
+      background: ${Green10};
+      ${media.lg(css`
+        background: ${lightBLue};
+      `)};
+    `};
 `;
 
 export const Button = styled.button`
@@ -101,10 +126,20 @@ export const Button = styled.button`
   font-family: "MyriadPro Bold";
   text-transform: uppercase;
   cursor: pointer;
+  ${({ biggerBox }) =>
+    biggerBox &&
+    css`
+      background: ${Green20};
+      ${media.lg(css`
+        background: ${blue};
+      `)};
+    `};
 `;
 
 export const OutOfBoundsController = styled.div`
-  transform: translateY(110px);
+  ${media.lg(css`
+    transform: translateY(110px);
+  `)};
 `;
 
 export const Cents = styled.span`

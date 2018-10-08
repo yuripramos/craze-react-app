@@ -8,7 +8,10 @@ export const HeaderWrapper = styled.header`
   height: ${rem(398)};
   background: url(${bg}) repeat-x;
   padding-top: ${rem(10)};
-
+  text-align: center;
+  ${media.md(css`
+    text-align: left;
+  `)};
   ${media.lg(css`
     height: ${rem(598)};
     padding-top: ${rem(6)};
@@ -18,18 +21,24 @@ export const HeaderWrapper = styled.header`
 export const Title = styled.h1`
   font-family: "Pacifico";
   font-size: ${rem(72)};
-  text-align: left;
+  text-align: center;
   color: ${white};
   text-shadow: ${rem(3)} ${rem(3)} rgba(0, 0, 0, 0.25);
+  ${media.md(css`
+    text-align: left;
+  `)};
 `;
 
 export const SubTitle = styled.h2`
   font-family: "Helveticaneue Medium";
   font-size: ${rem(24)};
-  text-align: left;
+  text-align: center;
   color: ${white};
-  width: ${rem(460)};
   text-shadow: ${rem(3)} ${rem(3)} rgba(0, 0, 0, 0.25);
+  ${media.md(css`
+    width: ${rem(460)};
+    text-align: left;
+  `)};
 `;
 
 export const IconWrapper = styled.div`

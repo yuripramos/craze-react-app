@@ -33,14 +33,16 @@ export const ControlWrapper = styled.div`
   ${({ width }) =>
     width &&
     css`
-      width: ${width};
+      width: ${rem(width)};
     `};
   ${({ height }) =>
     height &&
     css`
-      height: ${height};
+      height: ${rem(height)};
     `};
   opacity: 0.5;
+  margin-top: ${rem(100)};
+  padding: ${rem(10)} ${rem(20)};
 `;
 
 export const RightArrow = styled.span`

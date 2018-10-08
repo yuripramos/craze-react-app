@@ -2,15 +2,25 @@ import styled, { css } from "styled-components";
 import { rem, media } from "../../styles/tools";
 import { lightgrey, trueBlack, grey10 } from "../../styles/settings";
 
+export const ResponsiveWrapper = styled.div`
+  background: ${lightgrey};
+  margin-left: ${rem(-20)};
+  margin-right: ${rem(-20)};
+  text-align: center;
+`;
+
 export const ContentWrapper = styled.div`
   text-align: center;
   margin-left: ${rem(-20)};
   margin-right: ${rem(-20)};
   background: ${lightgrey};
-  height: ${rem(300)};
+  display: inline-flex;
   padding: ${rem(20)} ${rem(10)};
   ${media.md(css`
     padding: ${rem(60)} ${rem(10)};
+  `)};
+  ${media.lg(css`
+    height: ${rem(300)};
   `)};
 `;
 
@@ -18,8 +28,11 @@ export const Title = styled.h2`
   font-family: "MyriadPro SemiBold";
   font-size: ${rem(30)};
   color: ${trueBlack};
-  text-align: left;
   margin-top: ${rem(-5)};
+  text-align: center;
+  ${media.md(css`
+    text-align: left;
+  `)};
 `;
 
 export const Description = styled.h3`
@@ -28,7 +41,10 @@ export const Description = styled.h3`
   font-size: ${rem(16)};
   color: ${grey10};
   width: ${rem(510)};
-  text-align: left;
+  text-align: center;
+  ${media.md(css`
+    text-align: left;
+  `)};
 `;
 
 export const VideoWrapper = styled.div`

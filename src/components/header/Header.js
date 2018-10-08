@@ -38,16 +38,16 @@ function Header() {
               </IconWrapper>
             </ListIcons>
           </Column>
-          <Column>
-            <Hide below="md">
+          <Hide below="md">
+            <Column>
               <FeaturedImage>
                 <ImgHeader
                   src={FeaturedHandImage}
                   alt="handing holding a smartphone"
                 />
               </FeaturedImage>
-            </Hide>
-          </Column>
+            </Column>
+          </Hide>
         </Row>
       </Container>
     </HeaderWrapper>

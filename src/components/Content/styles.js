@@ -36,34 +36,42 @@ export const Box = styled.div`
   display: inline-grid;
   flex-direction: row;
   align-items: center;
-  border-bottom: solid 1px ${grey20};
+  height: ${rem(120)};
   ${media.lg(css`
     ${({ order }) =>
       order > 2 &&
       css`
         border: 0;
       `};
+    height: ${rem(200)};
   `)};
-  height: ${rem(200)};
+  ${media.md(css`
+    border-bottom: solid 1px ${grey20};
+  `)};
 `;
 
 export const ContainerWithRightBorder = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  ${media.sm(css`
+    width: 30%;
+  `)};
 `;
 
 export const RightBorder = styled.div`
   height: ${rem(210)};
   width: ${rem(2)};
   align-items: center;
-  border-right: solid 1px ${grey20};
+
   ${({ order }) =>
     (order === 2 || order === 5) &&
     css`
       border: 0;
     `};
+  ${media.sm(css`
+    border-right: solid 1px ${grey20};
+  `)};
 `;
 export const IcoAligner = styled.div`
   justify-content: center;
