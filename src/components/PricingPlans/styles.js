@@ -24,7 +24,6 @@ export const Title = styled.h2`
   font-size: ${rem(30)};
   color: ${trueBlack};
   text-align: center;
-  margin-top: 0;
 `;
 
 export const Description = styled.h3`
@@ -90,7 +89,7 @@ export const Footer = styled.div`
 `;
 
 export const Button = styled.button`
-  margin-top: ${rem(20)};
+  transform: translateY(25px);
   border: 0;
   text-decoration: none;
   background: ${blue};
@@ -112,5 +111,6 @@ export const Cents = styled.span`
   font-family: "Novecento DemiBold";
   font-size: ${rem(24)};
   color: ${trueBlack};
-  transform: translateY(-15px);
+  position: relative;
+  top: -10px;
 `;

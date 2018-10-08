@@ -110,7 +110,7 @@ function Content() {
             <FeaturesWrapper>
               {featuresArray.map((c, i) => (
                 <ContainerWithRightBorder>
-                  <Box key={i}>
+                  <Box order={i} key={i}>
                     <IcoAligner>
                       <Icon
                         type={c.icon}

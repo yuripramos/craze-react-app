@@ -19,7 +19,7 @@ export const Title = styled.h2`
   font-size: ${rem(30)};
   color: ${trueBlack};
   text-align: left;
-  margin-top: 0;
+  margin-top: ${rem(-5)};
 `;
 
 export const Description = styled.h3`

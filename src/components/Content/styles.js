@@ -14,6 +14,7 @@ export const Title = styled.h1`
   font-family: "MyriadPro SemiBold";
   font-size: ${rem(30)};
   color: ${trueBlack};
+  margin-top: 0;
 `;
 
 export const SubTitle = styled.h2`
@@ -36,8 +37,14 @@ export const Box = styled.div`
   flex-direction: row;
   align-items: center;
   border-bottom: solid 1px ${grey20};
-
-  height: ${rem(240)};
+  ${media.lg(css`
+    ${({ order }) =>
+      order > 2 &&
+      css`
+        border: 0;
+      `};
+  `)};
+  height: ${rem(200)};
 `;
 
 export const ContainerWithRightBorder = styled.div`

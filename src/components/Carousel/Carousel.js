@@ -41,9 +41,9 @@ class Carousel extends Component {
                     position="first"
                   >
                     <Paragraph>
-                      Donec sed tempor nunc. Etiam nec tortor euismod,
+                      "Donec sed tempor nunc. Etiam nec tortor euismod,
                       ullamcorper massa ut, commodo mauris. Etiam non ex posuere
-                      arcu porttitor gravida
+                      arcu porttitor gravida"
                     </Paragraph>
                     <Author>— H Scott, Edinburgh</Author>
                   </TestimonialItem>
@@ -52,9 +52,9 @@ class Carousel extends Component {
                     position="second"
                   >
                     <Paragraph>
-                      Nunc eleifend porttitor ipsum eget tristique suspendisse
+                      "Nunc eleifend porttitor ipsum eget tristique suspendisse
                       at sem sollicitudin, cursus massa eget, aliquet mi,
-                      Vivamus ut congue es
+                      Vivamus ut congue es"
                     </Paragraph>
                     <Author>— Nicola, Leith, Edinburgh</Author>
                   </TestimonialItem>
@@ -63,9 +63,9 @@ class Carousel extends Component {
                     position="third"
                   >
                     <Paragraph>
-                      Pellentesque habitant morbi tristique senectus et netus et
-                      malesuada fames ac turpis egestas, vestibulum venenatis
-                      arcu id turpis volutpat cursus
+                      "Pellentesque habitant morbi tristique senectus et netus
+                      et malesuada fames ac turpis egestas, vestibulum venenatis
+                      arcu id turpis volutpat cursus"
                     </Paragraph>
                     <Author>— W S Khan, Lothian Road, Edinburgh</Author>
                   </TestimonialItem>

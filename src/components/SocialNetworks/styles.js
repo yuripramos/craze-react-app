@@ -16,6 +16,7 @@ export const Title = styled.h1`
   font-family: "MyriadPro SemiBold";
   font-size: ${rem(30)};
   color: ${trueBlack};
+  margin-top: ${rem(35)};
 `;
 
 export const SubTitle = styled.h2`
