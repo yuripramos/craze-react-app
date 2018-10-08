@@ -30,11 +30,11 @@ Have an idea? Found a bug? PR? contact-me @ yuri.pramos@gmail.com
 
 ## Roadmap
 
-**Release 0.0.1** (current) - First release of the app
+**Release 0.1** (current) - First release of the app
 
-**Release 0.0.2** - Refining the Carousel Component
+**Release 0.2** - Refining the Carousel Component
 
-**Release 0.0.3** - Improvements in the responsiveness and UI
+**Release 0.3** - Improvements in the responsiveness and UI
 
 ## :v: Tests
 
